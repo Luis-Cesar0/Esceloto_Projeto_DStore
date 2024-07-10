@@ -1,3 +1,22 @@
+/* config Geral */
+:root{
+    --dark-gray:#1F1F1F;
+    --dark-gray-2:#474747;
+    --dark-gray-3:#666666;
+    --light-gray:#8F8F8F;
+    --light-gray-2:#cccccc;
+    --light-gray-3:#F5F5F5;
+    --primary:#C92071;
+    --secondary:#B5B6F2;
+    --error:#B5B6F2;
+    --success:#52CA76;
+    --warning:#F6AA1C;
+    --primary-gradient:linear-gradient( to right,#C92071,#EDABCA);
+    --secondary-gradient:linear-gradient( to right,#B5B6F2,#EFEFFF);
+    --white:#FFFFFF;
+    --Tertiary:#991956;
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +25,41 @@ body,html{
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
+    
+}
+main{
+    background-color: rgb(41, 41, 41);
+}
+/* Header digital Store */
+header{
+    padding: 20px 70px;
+
+}
+
+/*Parte decima do header  */
+#top-nav{
+    margin-bottom: 40px;
+}
+#form-search-nav{
+    
+}
+#btn_entra{
+    background-color: var(--primary);
+    color: var(--light-gray-3);
+
+}
+
+
+
+
+#listNavLinks{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+#listNavLinks a{
+    text-decoration: none;
 }
 
 
