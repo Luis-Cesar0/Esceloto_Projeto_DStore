@@ -8,32 +8,38 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img src="img/logo.png" alt="Digital Store" class="logo">
+        <img src="img/logo_DStore.png" alt="Digital Store" class="logo">
     </header>
     <main>
         <section class="secao-login">
-            <div class="caixa-login">
+            <div class="caixa-login" id="login-user">
                 <h1>Acesse sua conta</h1>
                 <p>Novo cliente? Então registre-se <a href="tela_de_cadastro.html">aqui</a>.</p>
                 <form>
-                    <div class="cont-email">
+                    <div class="cont-login-cad" id="cont-login">
                         <label for="login">Login *</label>
-                        <input type="text" id="login" name="login" placeholder="Insira seu login ou email">
+
+                        <input type="text" id="login" name="login" 
+                        placeholder="Insira seu login ou email">
+
                         <label for="senha">Senha *</label>
+
                         <input type="password" id="senha" name="senha" placeholder="Insira sua senha">
+                        <div class="cont-entra-esqueci">
+
+                            <a href="esqueci_senha.html" class="esqueci-senha">Esqueci minha senha</a>
+    
+                            <button type="submit" class="crie-entre-conta">Acessar Conta</button>
+    
+                       </div>
                     </div>
-                   <div class="cont-eqcSenha-entraConta">
-                        <a href="esqueci_senha.html" class="esqueci-senha">Esqueci minha senha</a>
-                        <button type="submit">Acessar Conta</button>
-                   </div>
+
+                   
                     <div class="login-social">
-                       
-                        <div class="social-icons">
-                            <p>Ou faça login com</p>
-                            <img src="img/gmail_1.png" alt="Google" id="google"> 
-                            <img src="img/Original.png" alt="Facebook" id="facebook">
-                        </div>
-                    </div>
+                        <p>Ou faça login com</p>
+                        <button class="loguin-social"><img src="img/gmail_1.png" alt="Google"></button>
+                        <button><img src="img/Original.png" alt="Facebook"></button>
+                    </div> 
                 </form>
             </div>
             <div class="imagens-sapatos">
@@ -42,19 +48,5 @@
             </div>
         </section>
     </main>
-     <footer id="rodape_espaco">  <!--  id declarado do rodape para poder ser incluido-->
-        <!-- O conteúdo do footer.html será carregado aqui -->
-    </footer>
-
-    <!-- USANDO JAVASCRIPT PARA INCLUIR O ARQUIVO FOOTER.HTML -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-             fetch('footer.html')   //nome do arquivo html com a parte do rodape a ser incluido 
-                .then(resposta => resposta.text())
-                .then(dados => {
-                    document.getElementById('rodape_espaco').innerHTML = dados; // aqui se coloca o id do rodape do footer
-                });
-        });
-    </script>
 </body>
 </html>
