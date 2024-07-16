@@ -1,0 +1,124 @@
+ /* config Geral */
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+ /* variáveis de cores e arredondamento de borda */
+ :root{
+     /* cores */
+     --dark-gray:#1F1F1F;
+     --dark-gray-2:#474747;
+     --dark-gray-search:#4747470a;
+     --dark-gray-3:#666666;
+     --light-gray:#8F8F8F;
+     --light-gray-2:#cccccc;
+     --light-gray-3:#F5F5F5;
+     --primary:#C92071;
+     --secondary:#B5B6F2;
+     --error:#B5B6F2;
+     --success:#52CA76;
+     --warning:#F6AA1C;
+     --primary-gradient:linear-gradient( to right,#C92071,#EDABCA);
+     --secondary-gradient:linear-gradient( to bottom,#B5B6F2,#EFEFFF);
+     --white:#FFFFFF;
+     --Tertiary:#991956;
+ 
+     /* borda */
+     --borda-redonda:8px
+ }
+  
+  
+  
+ *{
+         margin: 0;
+         padding: 0;
+ }
+        
+ body,html {
+    font-family: "Inter", sans-serif; 
+    background-color: #f5f5f5;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #F9F8FE;
+         
+        
+ }
+/* cabesalho */
+.cabecalho {
+    background-color: white;
+    padding: 10px 20px;
+    text-align: left;
+}
+main{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+/* container do formulario */
+h1{
+    color: var(--dark-gray);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.cont-principal{
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    
+}
+.cont-informacao{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: var(--dark-gray-2);
+    border-radius: 4px;
+}
+.cont-informacao p{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--light-gray-2);
+    font-weight: bold;
+}
+.cont-informacao label{
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.cont-informacao input{
+    background-color: var(--dark-gray-2) ;
+    background-color: #4747470a;
+    border: none;
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: var(--borda-redonda);
+    margin-bottom: 20px;
+}
+.cont-checkbox{
+    display: flex;
+}
+#confirmaEnvio:checked{
+    accent-color: var(--primary);
+}
+.cont-checkbox label{
+    color: var(--dark-gray-2) ;
+    padding:5px ;
+    font-size: 0.8rem;
+    font-weight: 600 ;
+    
+}
+#ciraConta{
+    width: 100%;
+    border: none;
+    background-color: var(--primary);
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px;
+    text-align: center ;
+    border-radius: var(--borda-redonda);    
+    cursor: pointer;
+    margin-bottom: 30px;
+}

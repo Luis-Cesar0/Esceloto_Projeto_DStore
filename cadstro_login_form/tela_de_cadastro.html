@@ -4,216 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Store - Criar Conta</title>
-    <style>
-        :root {
-            --cor-primaria: #d52d85;
-            --cor-primaria-hover: #c92478;
-            --cor-bg: #f8f8f8;
-            --cor-form-bg: #ffffff;
-            --cor-texto: #333;
-            --cor-borda: #ddd;
-            --cor-checkbox: #d52d85;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--cor-bg);
-            color: var(--cor-texto);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 500px;
-            padding: 20px;
-            margin: auto;
-        }
-
-        .cabecalho {
-            text-align: left; /* Alinha o conteúdo à esquerda */
-            margin-bottom: 20px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            background-color: #e2cfd9; /* Cor de fundo do cabeçalho */
-            padding: 10px 20px;
-            width: 1000%; /* Ocupa toda a largura */
-            left: 0; /* Garante que comece do canto esquerdo */
-            top: 0; /* Garante que comece do canto superior */
-            /* Garante que esteja na frente dos outros elementos */
-             margin-left: -100%;
-        }
-
-        .logo {
-            margin-right: auto; /* Move a logo para a lateral esquerda */
-        }
-
-        .logo img {
-            width: auto; /* Mantém a proporção da imagem */
-            height: 50px;
-        }
-
-        .conteudo-principal {
-            background-color: var(--cor-form-bg);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: var(--cor-texto);
-            text-align: center;
-        }
-
-        .formulario-cadastro {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: stretch;
-            justify-content: space-evenly;
-            align-items: stretch;
-        }
-
-        fieldset {
-            border: none;
-            margin-bottom: 20px;
-        }
-
-        legend {
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: var(--cor-texto);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: var(--cor-texto);
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        input[type="number"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid var(--cor-borda);
-            border-radius: 5px;
-        }
-
-        input[type="checkbox"] {
-            accent-color: var(--cor-checkbox);
-            margin-right: 10px;
-        }
-
-        .checkbox {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        button {
-            padding: 15px;
-            background-color: var(--cor-primaria);
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        button:hover {
-            background-color: var(--cor-primaria-hover);
-        }
-
-        footer {
-            background-color: var(--cor-bg);
-            text-align: center;
-            padding: 10px;
-            margin-top: auto;
-        }
-    </style>
-</head>
-<div class="container">
-    <header class="cabecalho">
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo">
-        </div>
-    </header>
+    <link rel="stylesheet" href="formCadastro.css">
 <body>
+<header class="cabecalho">
+        <img src="img/logo_DStore.png" alt="Digital Store" class="logo">
+</header>
   
 
-        <main class="conteudo-principal">
-            <h1>Criar Conta</h1>
-            <form class="formulario-cadastro">
-                <fieldset>
-                    <legend>Informações Pessoais</legend>
-                    <label for="nome">Nome Completo *</label>
-                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
-
-                    <label for="cpf">CPF *</label>
-                    <input type="number" id="cpf" name="cpf" placeholder="Insira seu CPF" required>
-
-                    <label for="email">E-mail *</label>
-                    <input type="email" id="email" name="email" placeholder="Insira seu email" required>
-
-                    <label for="celular">Celular *</label>
-                    <input type="tel" id="celular" name="celular" placeholder="Insira seu celular" required>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Informações de Entrega</legend>
-                    <label for="endereco">Endereço *</label>
-                    <input type="text" id="endereco" name="endereco" placeholder="Insira seu endereço" required>
-
-                    <label for="bairro">Bairro *</label>
-                    <input type="text" id="bairro" name="bairro" placeholder="Insira seu bairro" required>
-
-                    <label for="cidade">Cidade *</label>
-                    <input type="text" id="cidade" name="cidade" placeholder="Insira sua cidade" required>
-
-                    <label for="cep">CEP *</label>
-                    <input type="number" id="cep" name="cep" placeholder="Insira seu CEP" required>
-
-                    <label for="complemento">Complemento</label>
-                    <input type="text" id="complemento" name="complemento" placeholder="Insira complemento">
-                </fieldset>
-
-                <div class="checkbox">
-                    <input type="checkbox" id="newsletter" name="newsletter" checked>
-                    <label for="newsletter">Quero receber por email ofertas e novidades das lojas da Digital Store.</label>
-                </div>
-
-                <button type="submit">Criar Conta</button>
-            </form>
+        <main >
+            <div class="cont-principal">
+                <h1>Criar Conta</h1>
+                <form class="formulario-cadastro">
+                    
+                       <div class="cont-informacao">
+                        <p>Informações Pessoas</p>
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
+        
+                            <label for="cpf">CPF *</label>
+                            <input type="number" id="cpf" name="cpf" placeholder="Insira seu CPF" required>
+        
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" placeholder="Insira seu email" required>
+        
+                            <label for="celular">Celular *</label>
+                            <input type="number" name="celular" id="celular" placeholder="Insira seu celular">
+                       </div>
+    
+                       <div class="cont-informacao">
+                        <p>Informações de Entraga</p>
+                            <label for="endereco">Endereço *</label>
+                            <input type="text" id="endereco" name="endereco" placeholder="Insira seu endereço" required>
+        
+                            <label for="bairro">Bairro *</label>
+                            <input type="text" id="bairro" name="bairro" placeholder="Insira seu bairro" required>
+        
+                            <label for="cidade">Cidade *</label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Insira sua cidade" required>
+        
+                            <label for="cep">CEP *</label>
+                            <input type="number" id="cep" name="cep" placeholder="Insira seu CEP" required>
+        
+                            <label for="complemento">Complemento</label>
+                            <input type="text" id="complemento" name="complemento" placeholder="Insira complemento">
+                       </div>
+    
+                    <div class="cont-checkbox">
+                        <input type="checkbox" id="confirmaEnvio" name="newsletter" checked>
+                        <label for="confirmaEnvio">Quero receber por email ofertas e novidades das lojas da Digital Store. A frequência de envios pode  variar de acordo com a interação do cliente.</label>
+                    </div>
+                    <button type="submit" id="ciraConta">Criar Conta</button>
+                </form>
+            </div>
         </main>
     </div> 
-
-    <footer id="rodape-espaco"> 
-         <!-- O conteúdo do footer.html será carregado aqui  -->
-    </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch('footer.html')
-                .then(resposta => resposta.text())
-                .then(dados => {
-                    document.getElementById('rodape-espaco').innerHTML = dados;
-                });
-        });
-    </script>
 </body>
 </html>
