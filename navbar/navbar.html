@@ -11,120 +11,78 @@
    
   </head>
   <body>
-    <header>
-        <nav>
-          <div id="top-nav" class="nav-filhos d-flex justify-content-between align-items-center">
-            <a href="#" ><img src="img/logo_DStore.png" alt="logo_DStore"></a>
-            <form action="#" method="get" id="form-search-nav" >
-              <input type="search" name="pesProduto" id="pesProduto"  placeholder="Pesquisar produto...">
-              <button type="submit" class="nav-btn " id="btnPesquisa"><i class="bi bi-search"></i></button>
-            </form>
-           <div id="cadEntraCarinho">
-              <a href="#" class="nav-btn " id="link_cadastro">Cadastre-se</a>
-              <a href="#" class="nav-btn btn_primary" id="btn_entra">Entra</a>
-              <a href="#" id="btn-carrinho "><img src="img/carrinhoCompras.png" alt="carinho De compras"></a>
-           </div>
-          </div>
-          <div id="bot-nav" class="nav-filhos ">
-            <ul id="listNavLinks">
-              <li class="listLinks listLinksConfime"><a href="#" >Home</a></li>
-              <li class="listLinks"><a href="#">Produtos</a></li>
-              <li class="listLinks"><a href="#">Categoria</a></li>
-              <li class="listLinks"><a href="#">Meus Pedidos</a></li>
-            </ul>
-          </div>
-        </nav>
-    </header>
     <main>
-        <div id="banerOferta" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators" id="cont-indicador">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"  ></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"  aria-label="Slide 2 "></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"  c aria-label="Slide 3 "></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"  c aria-label="Slide 4 "></button>
-          </div>
-            <div class="carousel-inner d-flex " id="contPrincilaCarocel">
-              <div class="carousel-item active contDaOfeta ">
+      <div id="galeria" class="carousel slide carousel-dark">
 
-               <div class="painelDaOfeta ">
-                  <div class="contTextMelhorOfertas">
+        <div class="carousel-indicators" id="cont-indicators">
+          <button type="button" data-bs-target="#galeria" data-bs-slide-to="0" class="indicador active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#galeria" data-bs-slide-to="1" class="indicador" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#galeria" data-bs-slide-to="2" class="indicador" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner" id="container-galeria">
+
+          <div class="carousel-item active ">
+            <div class="conteudo-galeria">
   
-                    <p class="avisoPromo">Melhors ofertas personalizadas</p>
-                    <h2>Queima de stoque Nike &#128293;</h2>
-                    <p class="discPromo">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-                    <a href="#" class="btn_primary">ver ofertas</a>
-  
-                  </div>
-                  <div class="contImagens">
-  
-                    <img src="img/Sapato_Ornamento.png" class="d-block" alt="sapato_DStore" class="sapato_DStore">
-  
-                  </div>
-  
-               </div>
+              <div class="texto-galeria">
+                <p class="alerta-promo">Melhores ofertas personalizadas</p>
+                <h2>Queima de stoque Nike 🔥</h2>
+                <p class="detalhe-galeria">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
+                <button class="btn-primary">Ver Oferta</button>
               </div>
-              <div class="carousel-item contDaOfeta ">
 
-                <div class="painelDaOfeta ">
-                  <div class="contTextMelhorOfertas">
-  
-                    <p class="avisoPromo">Melhors ofertas personalizadas</p>
-                    <h2>Queima de stoque Nike &#128293;</h2>
-                    <p class="discPromo">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-                    <a href="#" class="btn_primary">ver ofertas</a>
-  
-                  </div>
-                  <div class="contImagens">
-  
-                    <img src="img/Sapato_Ornamento.png" class="d-block" alt="sapato_DStore" class="sapato_DStore">
-  
-                  </div>
-  
-               </div>
-              </div>
-              <div class="carousel-item painelDaOfeta">
-                <div  class="painelDaOfeta ">
-                  <div class="contTextMelhorOfertas">
-  
-                    <p class="avisoPromo">Melhors ofertas personalizadas</p>
-                    <h2>Queima de stoque Nike &#128293;</h2>
-                    <p class="discPromo">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-                    <a href="#" class="btn_primary">ver ofertas</a>
-  
-                  </div>
-                  <div class="contImagens">
-                    <img src="img/Sapato_Ornamento.png" class="d-block" alt="sapato_DStore" class="sapato_DStore">
-                    
-  
-                  </div>
-  
-               </div>
-
-
-              </div>
-              <div class="carousel-item painelDaOfeta">
-                <div  class="painelDaOfeta ">
-                  <div class="contTextMelhorOfertas">
-  
-                    <p class="avisoPromo">Melhors ofertas personalizadas</p>
-                    <h2>Queima de stoque Nike &#128293;</h2>
-                    <p class="discPromo">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
-                    <a href="#" class="btn_primary">ver ofertas</a>
-  
-                  </div>
-                  <div class="contImagens">
-                    <img src="img/Sapato_Ornamento.png" class="d-block" alt="sapato_DStore" class="sapato_DStore">
-                    
-  
-                  </div>
-  
-               </div>
-
-
-              </div>
+              <img src="img/Sapato_Ornamento.png" class="img-galeria" alt="...">
             </div>
-          
+
           </div>
+
+          <div class="carousel-item">
+
+            <div class="conteudo-galeria">
+
+              <div class="texto-galeria">
+                <p class="alerta-promo">Melhores ofertas personalizadas</p>
+                <h2>Queima de stoque Nike 🔥</h2>
+                <p class="detalhe-galeria">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
+                <button class="btn-primary">Ver Oferta</button>
+              </div>
+
+            
+
+             <img src="img/Sapato_Ornamento.png" class="img-galeria" alt="...">
+          </div>
+          </div>
+
+          <div class="carousel-item">
+
+            <div class="conteudo-galeria">
+              <div class="texto-galeria">
+                <p class="alerta-promo">Melhores ofertas personalizadas</p>
+                <h2>Queima de stoque Nike 🔥</h2>
+                <p class="detalhe-galeria">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
+                <button class="btn-primary">Ver Oferta</button>
+              </div>
+           
+
+              <img src="img/Sapato_Ornamento.png" class="img-galeria" alt="...">
+            </div>
+          </div>
+
+        </div>
+
+        <div id="arrow-galeria">
+          <button class="carousel-control-prev " type="button" data-bs-target="#galeria" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
